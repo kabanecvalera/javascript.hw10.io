@@ -3,34 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JavaScript10</title>
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery.nivo.slider.js"></script>
 </head>
 <body>
 <div class="container">
-    <header class="header">
+    <div class="top">
+      <div class="header-logo">
+
         <div class="logo">
-            <img src="img/logo.png" alt="">
+          <img src="img/logo.png" alt="">
+          <img src="" alt="" class="logo-pic">
         </div>
+
         <div class="social">
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+          <a href="#"><img src="" alt="" class="social-img1"></a>
+          <a href="#"><img src="" alt=""class="social-img2"></a>
+          <a href="#"><img src="" alt=""class="social-img3"></a>
+          <a href="#"><img src="" alt=""class="social-img4"></a>
+          <a href="#"><img src="" alt=""class="social-img5"></a>
         </div>
-        <div class="menu">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">FEATURES</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">SHOP</a></li>
-            </ul>
-        </div>
-        <div class="slider">
-            <img src="img/slider-img1.jpg" alt="">
-        </div>
+    </div>
+      
+    <header>
+      <ul id="menu-bar">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">FEATURES</a>
+        <ul>
+          <li><a href="#">Sub Menu 1</a></li>
+          <li><a href="#">Sub Menu 2</a></li>
+          <li><a href="#">Sub Menu 3</a></li>
+          <li><a href="#">Sub Menu 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">SERVICES</a>
+        <ul>
+          <li><a href="#">Sub Menu 1</a></li>
+          <li><a href="#">Sub Menu 2</a></li>
+          <li><a href="#">Sub Menu 3</a></li>
+          <li><a href="#">Sub Menu 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">SHOP</a></li>
+    </ul>
     </header>
+     
+     <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+    </script>
+    
+    <div id="header">
+        <div id="slider" class="nivoSlider">
+            <img src="img/header.png" alt="">
+            <img src="img/header2.png" alt="">
+            <img src="img/header3.png" alt="">
+        </div>
+        <img src="img/slider-pic.png" alt="" class="slider-logo">
+    </div>
+    
+    </div>
     
     <div class="info">
        
@@ -67,36 +102,139 @@
     </div>
     
     <div class="services">
-       <h4 class="services-header">Our Services</h4>
-        <a href=""><img src="" alt="">Schedule Services</a>
-        <a href=""><img src="" alt="">Preventive Maintence</a>
-        <a href=""><img src="" alt="">Tire & Wheel Services</a>
-        <a href=""><img src="" alt="">Repair Services</a>
+       
+        <h4 class="services-header">Our Services</h4>
+        
+        <div class="services-line">
+           
+            <div class="services-block1">
+                <a href="#" class="service-txt">
+                <img src="" alt="" class="services-img1">Schedule Services</a>
+            </div>
+
+            <div class="services-block2">
+                <a href="#" class="service-txt">
+                <img src="" alt="" class="services-img2">Preventive Maintence</a>
+            </div>
+
+            <div class="services-block3">
+                <a href="#" class="service-txt">
+                <img src="" alt="" class="services-img3">Tire & Wheel Services</a>
+            </div>
+
+            <div class="services-block4">
+                <a href="#" class="service-txt">
+                <img src="" alt="" class="services-img4">Repair Services</a>
+            </div>
+            
+        </div>
+        
     </div>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
+    
+    <div class="content">
+       <div class="content-wrapper">
+           <div class="news-wrapper">
+           
+                <h5 class="news-header">Latest News</h5>
+
+                <div class="news-block">
+
+                    <div class="news-block-img">
+                       <img src="" alt="" class="news-img1">
+                       <div class="news-img1-mounth">
+                          <p class="img1-mounth">Jan</p> 
+                       </div>
+                       <div class="news-img1-day">
+                          <p class="img1-day">23</p> 
+                       </div>
+                    </div>
+
+                    <div class="news-block-txt">
+                        <a href="#" class="block-txt-header">Advanced Machineri Helps Improve Quality</a>
+                        <p class="block-txt-news">by <span class="block-txt-marker">cmsmasters</span>  Comments (<span class="block-txt-marker">6</span>)</p>
+                        <div class="block-txt-field">
+                            <p class="block-txt-news">Cum sociis natoque penatibus et magnis dis parturient montesmus.Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspematur samomo enim ipsam voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+
+                    <div class="news-block-img">
+                        <img src="" alt="" class="news-img2">
+                        <div class="news-img2-mounth">
+                          <p class="img2-mounth">Jan</p> 
+                       </div>
+                       <div class="news-img2-day">
+                          <p class="img2-day">21</p> 
+                       </div>
+                    </div>
+
+                    <div class="news-block-txt">
+                        <a href="#" class="block-txt-header">Powerful Techniques for Advanced Service</a>
+                        <p class="block-txt-news">by <span class="block-txt-marker">cmsmasters</span>  Comments (<span class="block-txt-marker">3</span>)</p>
+                        <div class="block-txt-field">
+                            <p class="block-txt-news">Cum sociis natoque penatibus et magnis dis parturient montesmus.Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspematur samomo enim ipsam voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-wrapper">
+              
+               <h6 class="accordion-header">Banners Place</h6>
+                <div>
+                    
+                </div>
+                
+                <div>
+                    
+                </div>
+                
+                <div>
+                    
+                </div>
+                
+            </div>
+        </div>
     </div>
-    <div>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
+        
+    <div class="company-wrapper">
+       
+        <a href="#"><img src="" alt="" class="company-item1"></a>
+        <a href="#"><img src="" alt="" class="company-item2"></a>
+        <a href="#"><img src="" alt="" class="company-item3"></a>
+        <a href="#"><img src="" alt="" class="company-item4"></a>
+        <a href="#"><img src="" alt="" class="company-item5"></a>
+        <a href="#"><img src="" alt="" class="company-item6"></a>
+        
     </div>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    
+    <div class="block-refs">
+
+        <div class="refs-wrapper">
+            <div class="block-refs1">
+                
+            </div>
+            <div class="block-refs2">
+                
+            </div>
+            <div class="block-refs3">
+                
+            </div>
+            <div class="block-refs4">
+                
+            </div>
+        </div>
+
     </div>
+    
     <div>
         <a href=""></a>
         <a href=""></a>
         <a href=""></a>
     </div>
 </div>
+
 </body>
 </html>

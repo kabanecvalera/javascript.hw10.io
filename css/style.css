@@ -1,5 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-   
-        
-        
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    margin: auto;
+}
+
+/*============ШАПКА : ЛОГОТИП============*/
+
+.header-logo{
+    width: 1160px;
+    height: 35px;
+    margin: 35px 0 0 95px;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo-pic{
+    background: url(../img/sprites1.png) -282px -486px ;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 2px;
+    left: 16px;
+}
+
+.logo-pic:hover{
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+/*===========СОЦИАЛЬНЫЕ ИКОНКИ==========*/
+
+.social{
+    width: 195px;
+    float: right;
+}
+
+.social-img1{
+    background: url(../img/sprites1.png) -331px -13px ;
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+
+.social-img2{
+    background: url(../img/sprites1.png) -331px -166px ;
+    width: 17px;
+    height: 13px; 
+    position: absolute;
+    top: 20px;
+    right: 100px;  
+}
+
+.social-img3{
+    background: url(../img/sprites1.png) -329px -52px ;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}
+
+.social-img4{
+    background: url(../img/sprites1.png) -332px -94px ;
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+ 
+.social-img5{
+    background: url(../img/sprites1.png) -330px -130px ;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+ /*===============MЕНЮ===============*/
+
+#menu-bar{
+    width: 1145px;
+    margin: 40px 0 40px 95px;
+    padding: 6px 6px 4px 6px;
+    height: 52px;
+    line-height: 52px;
+    background: #2A2D32;
+    position: relative;
+    z-index: 999;
+}    
+
+#menu-bar li{
+    margin: 0 0 6px 0;
+    padding: 0 6px 0 6px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+#menu-bar a{
+    font: 12px Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 6px 20px 6px 20px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+#menu-bar .active a, #menu-bar li:hover > a {background: #0399D4;}
+
+#menu-bar li:hover > ul{display: block;}
+
+#menu-bar ul{
+    background: #000;
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+#menu-bar:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#menu-bar{display: inline-block;}
+
+#menu-bar{display: block;}
+
+html #menu-bar{height: 1%;}
+
+.slider{
+    position: relative;
+}
+
+.slider-logo{
+    position: absolute;
+    top: 410px;
+    left: 120px;
+    z-index: 20;
+}
+
+/*===========NIVO SLIDER STYLES=======*/
+
+.nivoSlider a.nivo-imageLink {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 6;
+	display: none;
+}
+
+/*=============Эффекты==============*/ 
+
+.nivo-slice {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+}
+
+.nivo-box { 
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+
+/*==============Заголовок============*/
+
+.nivo-caption {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background: #000;
+	color: #fff;
+	opacity: 0.8; /* Overridden by captionOpacity setting */
+	width: 100%;
+	z-index: 8;
+}
+
+.nivo-caption p {
+	padding: 5px;
+	margin: 0;
+}
+
+.nivo-caption a {
+	display: inline !important;
+}
+
+.nivo-html-caption {
+    display: none;
+}
+
+/*================Стрелки===============*/
+
+.nivo-directionNav a {
+	position: absolute;
+	top: 45%;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.nivo-prevNav {
+	left: 0px;
+}
+
+.nivo-nextNav {
+	right: 0px;
+}
+
+/*===================HTML5 tags=================*/
+
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+
+#slider {
+    margin: 0 0 0 95px;
+    width: 939px;
+    height: 400px;
+	background: url(../img/lightbox-ico-loading.gif) no-repeat 50% 50%;
+}
+
+#slider img {
+	display: none;
+}
+
+#slider a {
+	border: 0;
+	display: block;
+}
+
+.nivo-controlNav {
+	display: none;
+}
+
+.nivo-directionNav a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/arrows.png) no-repeat;
+	text-indent: -9999px;
+	border: 0;
+}
+
+a.nivo-nextNav {
+	background-position: -30px 0;
+	right: 15px;
+}
+
+a.nivo-prevNav {
+	left: 15px;
+}
+
+.nivo-caption {
+    text-shadow: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.nivo-caption a { 
+    color: #efe9d1;
+    text-decoration: underline;
+}
+
+/*==================БЛОК РЕКЛАМЫ================*/
+
+.info {
+    margin: 40px 0 40px 95px;
+    width: 1160px;
+    height: 185px;
+    position: relative;
+    display: inline-block;
+}
+
+.info-first {
+    width: 365px;
+    height: 185px;
+    float: left;
+}
+.info-second {
+    width: 365px;
+    height: 185px;
+    float: left;
+}
+
+.info-third {
+    width: 365px;
+    height: 185px;
+    float: left;
+}
+
+/*================СЕРВИС БЛОК================*/
+
+.services{
+    width: 100%;
+    height: 500px;
+    background: #2A2D32;
+    position: relative;
+}
+
+.services-line{
+    margin: 40px 0 0 95px;
+    width: 1160px;
+}
+
+.services-header{
+    padding: 40px 0 0 100px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.services-block1{
+    width: 260px;
+    height: 310px;
+    position: absolute;
+    top: 100px;
+    left: 95px;   
+}
+
+.services-block2{
+    width: 260px;
+    height: 310px;
+    position: absolute;
+    top: 100px;
+    left: 390px;   
+}
+
+.services-block3{
+    width: 260px;
+    height: 310px;
+    position: absolute;
+    top: 100px;
+    left: 685px;    
+}
+
+.services-block4{
+    width: 260px;
+    height: 310px;
+    position: absolute;
+    top: 100px;
+    left: 980px;   
+}
+
+.service-txt {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-txt:hover {
+    color: #F4B60D;
+}
+
+.services-img1{
+    background: url(../img/sprites2.png) -271px -272px ;
+    width: 260px;
+    height: 260px;
+}
+
+.services-img2{
+    background: url(../img/sprites2.png) -270px -4px ;
+    width: 260px;
+    height: 260px;
+}
+
+.services-img3{
+    background: url(../img/sprites2.png)  0 -3px ;
+    width: 260px;
+    height: 260px;
+}
+
+.services-img4{
+    background: url(../img/sprites2.png)  0 -271px;
+    width: 260px;
+    height: 260px;
+}
+
+.services-img1:hover,
+.services-img2:hover,
+.services-img3:hover,
+.services-img4:hover{
+    background: url(../img/sprites1.png) 0 -259px ;
+	width: 260px;
+	height: 260px;   
+}
+
+/*============БЛОК КОНТЕНТА==============*/
+
+.content {
+    width: 100%;
+    padding-top: 40px;
+    background: #F7F7F7;
+}
+
+.content-wrapper {
+    width: 1160px;
+    height: 400px;
+    padding-left: 95px;
+}
+
+.news-wrapper {
+    width: 560px;
+    height: 400px;
+    float: left;
+}
+
+.news-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.news-block {
+    width: 560px;
+    height: 150px;
+    padding: 10px 0;
+}
+
+.news-block-img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    float: left;
+}
+
+.news-img1 {
+    background: url(../img/sprites1.png) -162px -93px ;
+	width: 150px;
+	height: 150px;
+}
+
+.news-img1-mounth {
+    width: 40px;
+    height: 40px;
+   position: absolute;
+    top: 10px;
+    left: -10px;
+    background: #248CEC;
+}
+
+.img1-mounth {
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.img1-day {
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.news-img1-day {
+    width: 40px;
+    height: 40px;
+   position: absolute;
+    top: 50px;
+    left: -10px;
+    background: #F4B60D;
+}
+
+.news-img2 {
+    background: url(../img/sprites1.png) 0 -95px ;
+	width: 150px;
+	height: 150px;
+}
+
+.news-img2-mounth {
+    width: 40px;
+    height: 40px;
+   position: absolute;
+    top: 10px;
+    left: -10px;
+    background: #248CEC;
+}
+
+.img2-mounth {
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.img2-day {
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.news-img2-day {
+    width: 40px;
+    height: 40px;
+   position: absolute;
+    top: 50px;
+    left: -10px;
+    background: #F4B60D;
+}
+.news-block-txt {
+    width: 370px;
+    float: right;
+}
+
+.block-txt-header {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.block-txt-header:hover {
+    color: #248CEC;  
+}
+
+.block-txt-news {
+    padding-top: 3px;
+    font-size: 13px;
+    color: #8A8A8A;
+}
+
+.block-txt-field {
+    padding-top: 20px;
+}
+
+.block-txt-marker {
+    font-size: 13px;
+    color: #0187F4;
+}
+
+/*====================АККОРДЕОН=======================*/
+
+.accordion-wrapper {
+    width: 565px;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+}
+
+.accordion-header {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
+
+/*============БЛОК ССЫЛОК НА КОМПАНИИ==================*/
+
+.company-wrapper {
+    height: 240px;
+    position: relative;
+}
+
+.company-item1 {
+    background: url(../img/sprites1.png) -366px -98px ;
+	width: 143px;
+	height: 62px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.company-item2 {
+    background: url(../img/sprites1.png) -361px -268px ;
+	width: 143px;
+	height: 62px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+.company-item3 {
+    background: url(../img/sprites1.png) -332px -458px ;
+	width: 184px;
+	height: 64px;
+    position: absolute;
+    top: 100px;
+    left: 481px;
+}
+
+.company-item4 {
+    background: url(../img/sprites1.png) -356px -5px ;
+	width: 143px;
+	height: 62px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+
+.company-item5 {
+    background: url(../img/sprites1.png) -361px -186px ;
+	width: 143px;
+	height: 62px;
+    position: absolute;
+    top: 100px;
+    left: 900px;
+}
+
+.company-item6 {
+    background: url(../img/sprites1.png) -355px -378px ;
+	width: 143px;
+	height: 62px;
+    position: absolute;
+    top: 100px;
+    left: 1100px;
+}
+
+/*=====================БЛОК ССЫЛОК========================*/
+
+.block-refs {
+    width: 100%;
+    height: 325px;
+    background: #2A2D32;
+}
+
+.refs-wrapper {
+    width: 1165px;
+    height: 180px;
+    margin-left: 95px;
 }
