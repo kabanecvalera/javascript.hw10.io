@@ -95,50 +95,57 @@ body{
 }
 
  /*===============MЕНЮ===============*/
+.header{
+    width: 1160px;
+    height: 52px;
+    margin: 40px 0 40px 95px;
+    background: #2A2D32;
+}
+
+.menu-block{
+    width: 900px;
+    height: 52px;
+    float: left;
+}
 
 #menu-bar{
-    width: 1145px;
-    margin: 40px 0 40px 95px;
-    padding: 6px 6px 4px 6px;
-    height: 52px;
+    display: inline-block;
     line-height: 52px;
-    background: #2A2D32;
+    
     position: relative;
     z-index: 999;
-}    
+} 
 
 #menu-bar li{
-    margin: 0 0 6px 0;
-    padding: 0 6px 0 6px;
     float: left;
     position: relative;
     list-style: none;
 }
 
 #menu-bar a{
-    font: 12px Arial;
-    font-weight: bold;
+    font: 400 14px / 20px Arial;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
     display: block;
-    padding: 6px 20px 6px 20px;
+    padding: 16px 35px;
     margin: 0;
-    margin-bottom: 6px;
 }
 
-#menu-bar .active a, #menu-bar li:hover > a {background: #0399D4;}
+#menu-bar .active a {background-color: #248cec;}
+
+#menu-bar li:hover > a {color: #f4b60d;}
 
 #menu-bar li:hover > ul{display: block;}
 
 #menu-bar ul{
-    background: #000;
+    background: #2A2D32;
     display: none;
     margin: 0;
     padding: 0;
     width: 185px;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 0;
 }
 
@@ -151,11 +158,58 @@ body{
     height: 0;
 }
 
-#menu-bar{display: inline-block;}
+.search-block{
+    width: 260px;
+    height: 40px;
+    float: right;
+    position: relative;
+}
 
-#menu-bar{display: block;}
+search-container{
+  width: 260px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
-html #menu-bar{height: 1%;}
+.search-container input#search{
+  width: 260px;
+  height: 40px;
+  background: #7c88a2;
+  border: none;
+  font-size: 10px;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.search-container input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.search-container input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+
+.search-container input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+
+.search-container input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.search-ico{
+    background: url(../img/sprites1.png) -283px -467px;
+	width: 14px;
+	height: 14px;
+    position: absolute;
+    top: 1px;
+    right: 10px; 
+}
 
 .slider{
     position: relative;
@@ -325,6 +379,38 @@ a.nivo-prevNav {
     width: 365px;
     height: 185px;
     float: left;
+}
+
+.info-first-img1 {
+    background: url(../img/sprites1.png) -2px -2px ;
+    width: 80px;
+	height: 64px;
+    position: absolute;
+    top: -10px;
+    left: -80px;
+}
+
+.info-first-img2 {
+    background: url(../img/sprites1.png) -274px -302px ;
+	width: 32px;
+	height: 32px;
+    position: absolute;
+    top: -10px;
+    left: 150px;  
+}
+
+
+.info-header {
+    font: 500 20px / 20px Arial;
+}
+
+.info-txt {
+    font: 400 13px / 20px Arial;
+    color: #8a8a8a;
+}
+
+.info-ref {
+    font: 500 13px / 20px Arial;
 }
 
 /*================СЕРВИС БЛОК================*/
